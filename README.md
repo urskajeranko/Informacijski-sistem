@@ -1,4 +1,4 @@
-#Informacijski sistem - naèrt
+# Informacijski sistem - naèrt
 
 1. Vnašanje dnevnih naroèil in porabe
 

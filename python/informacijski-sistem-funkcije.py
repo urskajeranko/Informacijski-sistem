@@ -1,26 +1,33 @@
 class Shramba:
 
-    def narocilo(zivilo, kolicina):
+    #def __init__(self, datoteka):
+        #self.zivila = {}
+        #self.nalozi_zivila(datoteka)
+
+    #def nalozi_zivila(self, datoteka):
+        #nalozimo zivila
+
+    def narocilo(self, zivilo, kolicina):
         pomnozen = {}
         for kljuc in zivilo:
             pomnozen[kljuc] = zivilo[kljuc] * kolicina
         return pomnozen
 
-    def vrni_zivilo(niz):
+    def vrni_zivilo(self, niz):
         rezultat = []
         niz.split(",")
         for x in niz.split(","):
             rezultat.append(int(x))
         return rezultat
 
-    def dnevna_poraba(ime_vhodne, ime_izhodne):
+    def dnevna_poraba(self, ime_vhodne, ime_izhodne):
         with open(ime_vhodne) as f:
             with open(ime_izhodne, "w") as g:
                 for vrstica in f:
                     danasnje_kalorije = vrni_kalorije(vrstica.strip())
                     
 
-    def povprecna_poraba(ime_vhodne, ime_izhodne):
+    def povprecna_poraba(self, ime_vhodne, ime_izhodne):
         with open(ime_vhodne) as f:
             with open(ime_izhodne, "w") as g:
                 stevilka_dneva = 1
@@ -35,13 +42,13 @@ class Shramba:
                 povprecje_po_dnevih = sum(kalorije_po_dnevih)/len(kalorije_po_dnevih)
                 print("{:.2f}".format(povprecje_po_dnevih), file = g)
 
-    def zaloga(zivilo, kolicina):
+    def zaloga(self, zivilo, kolicina):
         for sestavina in zivilo:
             if zivilo[sestavina] > kolicina.get(sestavina, 0):
                 return False
         return True 
 
-    def opozori(zivilo, zaloga):
+    def opozori(self, zivilo, zaloga):
         dokup = {}
         for sestavina, vrednost in zivilo.items():
             na_zalogi = zaloga.get(sestavina, 0)

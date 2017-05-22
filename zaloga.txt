@@ -1,0 +1,10 @@
+jajca: 50
+moka: 40
+solata: 5
+sladoled: 200
+zrezki: 20
+kruh: 15
+mleko: 20
+pomfrit: 45
+testenine: 10
+sir: 18 

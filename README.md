@@ -1,11 +1,13 @@
-# Informacijski sistem - naèrt
+# KriÅ¾ec-kroÅ¾ec - naÄrt
 
-1. Vnašanje dnevnih naroèil in porabe
+1. Ob pogonu igre se izpiÅ¡ejo navodila 
 
-2. Gumb za dodajanje ivil (nek seznam, slovar)
+2. MoÅ¾nost izbire: igralec proti raÄunalniku ali dva igralca
 
-3. Raèunanje povpreèja porabe ivil, ki so v seznamu, po dnevih (ponedeljek: x sladoleda, y piva, z solate, ...)
+3. Polje velikosti 3Ã—3, ob vsaki novi potezi se polje posodobi
 
-4. Opozori, katerega ivila primanjkuje za naslednji dan glede na povpreèno porabo
+4. ZaÄrtam moÅ¾ne poteze
 
-5. Belei, koliko katerega ivila je še na zalogi glede na naroèila in porabo (inventura)
+5. Prepozna neveljavno potezo
+
+6. Prepozna zmago (3 enaki znaki v vrsti oziroma diagonali)
